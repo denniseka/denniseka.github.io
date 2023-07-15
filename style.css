@@ -1,0 +1,59 @@
+:root {
+  --bg-primary: #010409;
+  --bg-secon: #0d1117;
+  --bg-third: #30363d;
+}
+
+#utama {
+  background-color: var(--bg-secon);
+  height: 100vh;
+}
+
+nav {
+  background-color: var(--bg-primary);
+  font-family: 'Nunito', sans-serif;
+  width: 100%;
+}
+
+#jumbotron {
+  padding-top: 50px;
+  text-align: center;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+}
+
+#about {
+  margin-top: -25px;
+  background-color: #383e3b;
+  color: white;
+}
+
+#projects {
+  background-color: #0f1311;
+  color: white;
+}
+
+#projects .card img {
+  height: 300px;
+}
+
+@media only screen and (max-width: 476px) {
+  #utama {
+    width: 100%;
+    padding: 0;
+  }
+  #jumbotron {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  #name > h1 {
+    font-size: 30px;
+  }
+
+  #photo > img {
+    width: 250px;
+  }
+}
