@@ -1,59 +1,30 @@
-:root {
-  --bg-primary: #010409;
-  --bg-secon: #0d1117;
-  --bg-third: #30363d;
-}
-
-#utama {
-  background-color: var(--bg-secon);
-  height: 100vh;
-}
+/* Navbar */
 
 nav {
-  background-color: var(--bg-primary);
-  font-family: 'Nunito', sans-serif;
-  width: 100%;
+  font-family: "Nunito", sans-serif;
 }
 
-#jumbotron {
-  padding-top: 50px;
-  text-align: center;
-  color: white;
-  font-family: 'Nunito', sans-serif;
+nav .navbar-nav a {
+  color: #fff;
+}
+/* Navbar End */
+
+.home {
+  font-family: "Nunito", sans-serif;
 }
 
-#about {
-  margin-top: -25px;
-  background-color: #383e3b;
-  color: white;
+.about {
+  font-family: "Nunito", sans-serif;
 }
 
-#projects {
-  background-color: #0f1311;
-  color: white;
+.portofolio {
+  font-family: "Nunito", sans-serif;
 }
 
-#projects .card img {
-  height: 300px;
+#contact {
+  font-family: "Nunito", sans-serif;
 }
 
-@media only screen and (max-width: 476px) {
-  #utama {
-    width: 100%;
-    padding: 0;
-  }
-  #jumbotron {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-
-  #name > h1 {
-    font-size: 30px;
-  }
-
-  #photo > img {
-    width: 250px;
-  }
+#footer {
+  font-family: "Nunito", sans-serif;
 }

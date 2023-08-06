@@ -1,60 +1,409 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Dennis Eka Saputra || Portofolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://unpkg.com/feather-icons"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700&family=Montserrat:ital,wght@0,100;0,300;0,500;0,700;1,100&family=Nunito:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700&family=Montserrat:ital,wght@0,100;0,300;0,500;0,700;1,100&family=Nunito:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
 
-    <!-- MyCSS -->
     <link rel="stylesheet" href="style.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <!-- My CSS -->
+
+    <title>Website Portofolio || Dennis Eka Saputra</title>
   </head>
   <body>
-    <!-- NAVBAR -->
-    <nav class="navbar fixed-top navbar-expand-lg shadow-sm" data-bs-theme="dark">
-      <div class="container">
-        <a class="navbar-brand" href="#">My Portofolio</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg bg-primary fixed-top opacity-75"
+      data-bs-theme="dark"
+    >
+      <div class="container fs-5">
+        <a class="navbar-brand fw-semibold" href="#">Dennis Eka Saputra</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav">
+            <a class="nav-link" aria-current="page" href="#home">Home</a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#project">Project</a>
+            <a class="nav-link" href="#contact">Contact</a>
+          </div>
         </div>
       </div>
     </nav>
-    <!-- END NAVBAR -->
+    <!-- Navbar End -->
 
-    <div id="utama" class="container-fluid">
-      <!-- JUMBOTRON -->
-      <section id="jumbotron" class="container d-flex justify-content-center align-items-center flex-row vh-100">
-        <div id="photo" class="container">
-          <img src="img/dennis.png" alt="Dennis Eka Saputra" width="325px" />
+    <!-- Home Section -->
+    <section class="home" id="home" style="padding-top: 7%">
+      <div class="container h-auto pb-5 border-bottom border-primary">
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col-lg-6 position-relative">
+            <img
+              src="img/dennis.png"
+              alt="Dennis Eka Saputra"
+              class="position-absolute top-50 start-50 translate-middle h-75"
+            />
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <path
+                fill="#0D6EFD"
+                d="M37.9,-34.6C49.3,-16,58.7,-0.2,57.8,16.9C56.9,34.1,45.6,52.6,29.5,59.8C13.5,66.9,-7.4,62.7,-24.1,53.3C-40.8,44,-53.4,29.5,-58.9,11.7C-64.4,-6.2,-62.7,-27.5,-51.7,-46C-40.7,-64.6,-20.4,-80.4,-3.6,-77.6C13.3,-74.7,26.5,-53.2,37.9,-34.6Z"
+                transform="translate(100 100)"
+              />
+            </svg>
+          </div>
+          <div class="identity col-lg-6">
+            <h1 class="fs-5 fw-normal lh-base">
+              Halo semuanya... saya
+              <span class="text-primary fs-1 d-block fw-bold"
+                >Dennis Eka Saputra</span
+              >
+            </h1>
+            <p class="fs-3 fst-italic">Frontend Developer</p>
+            <button class="btn btn-primary">Hubungi Saya</button>
+          </div>
         </div>
-        <div id="name" class="container border-bottom">
-          <h1 class="display-4 fw-bold shadow-sm">Dennis Eka Saputra</h1>
-          <p class="lead fst-italic">Frontend Web Developer</p>
-        </div>
-      </section>
-      <!-- END JUMBOTRON -->
-    </div>
+      </div>
+    </section>
+    <!-- Home Section End -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!-- About Section -->
+    <section class="about pt-sm-5" id="about" style="padding-top: 18%">
+      <div class="container">
+        <div class="row pt-sm-4">
+          <div class="col-lg-6">
+            <h2 class="text-primary fs-4 fw-bolder">TENTANG SAYA</h2>
+            <p class="fw-light">
+              Saya mencari peluang dalam bidang
+              <span class="text-primary fst-italic"
+                >Front-end Web Development</span
+              >
+              dan
+              <span class="text-primary fst-italic">Quality Assurance</span>
+              dengan latar belakang pendidikan Sistem Informasi. Memiliki
+              kemampuan dalam merancang, mengembangkan, dan menguji sistem. Saya
+              suka dalam memecahkan masalah yang terjadi pada sistem serta suka
+              dalam belajar hal baru.
+            </p>
+
+            <div class="icons-sosial-media mb-5">
+              <!-- Instagram -->
+              <a
+                href="https://www.instagram.com/dennisesptr_/"
+                class="me-3"
+                target="_blank"
+                ><i data-feather="instagram"></i
+              ></a>
+              <!-- LinkedIn -->
+              <a
+                href="https://www.linkedin.com/in/dennisekas04/"
+                class="me-3"
+                target="_blank"
+                ><i data-feather="linkedin"></i
+              ></a>
+              <!-- GitHub -->
+              <a
+                href="https://github.com/denniseka"
+                class="me-3"
+                target="_blank"
+                ><i data-feather="github"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h2 class="text-primary fs-4 fw-bold">KEMAMPUAN</h2>
+            <h3 class="fs-5 fw-bold">Hard Skill</h3>
+            <p class="fw-light">
+              HTML, CSS, PHP, Kotlin, Firebase Database, MySQL, JavaScript,
+              Laravel (basic), ReactJS (basic)
+            </p>
+            <h3 class="fs-5 fw-bold">Soft Skill</h3>
+            <p class="fw-light">Problem solving, Critical thinking</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Portofolio -->
+    <section
+      class="portofolio bg-light pb-5 pt-sm-5 text-center"
+      id="project"
+      style="padding-top: 18%"
+    >
+      <div class="container pt-4">
+        <h5 class="text-primary fw-bold">PORTOFOLIO</h5>
+        <h2 class="fw-bold">Project Terbaru</h2>
+        <p
+          class="text-wrap m-auto fw-light mb-4"
+          style="width: 20rem; line-height: 1.5rem"
+        >
+          Bagian ini berisi tentang projek yang sudah saya kerjakan. Semoga bisa
+          menjadi referensi yang bagus.
+        </p>
+        <div class="row row-gap-3">
+          <!-- Project 1 -->
+          <div
+            class="col-sm-6 d-flex justify-content-center align-items-center"
+          >
+            <div
+              class="card overflow-hidden"
+              style="width: 30rem; height: 30rem"
+            >
+              <img
+                src="img/projek/kini-cheese-tea.png"
+                class="card-img-top"
+                alt="Aplikasi Kasir KINI Cheese Tea Berbasis Android"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold text-primary">
+                  Aplikasi Kasir KINI Cheese Tea Berkoh
+                </h5>
+                <div class="projek-deskripsi h-100">
+                  <p class="card-text fw-light">
+                    Sistem berbasis aplikasi Android yang digunakan untuk
+                    menangani transaksi, laporan penjualan, serta ketersediaan
+                    bahan baku. Sistem dapat menampilkan produk yang dijual dan
+                    mengelola laporan penjualan.
+                  </p>
+                  <p class="card-text fst-italic">
+                    Android Studio, Kotlin, Firebase Database, Figma
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div
+            class="col-sm-6 d-flex justify-content-center align-items-center"
+          >
+            <div class="card" style="width: 30rem; height: 30rem">
+              <div class="img-card" style="height: 15rem">
+                <img
+                  src="img/projek/websiteKedaiKopi.png"
+                  class="card-img-top"
+                  alt="Website Kedai Kopi"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title fw-bold">
+                  <a href="" style="text-decoration: none"
+                    >Website Kedai Kopi</a
+                  >
+                </h5>
+                <div class="projek-deskripsi h-100">
+                  <p class="card-text fw-light">
+                    Website kedai kopi yang berisi informasi tentang kedai kopi
+                    yaitu menu, produk yang di jual, dan kontak untuk
+                    menghubungi kedai tersebut. Dalam website tersebut memiliki
+                    fitur untuk melihat detail dari produk.
+                  </p>
+                  <p class="card-text fst-italic">HTML5, CSS, JavaScript</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portofolio End -->
+
+    <!-- Contact -->
+    <section id="contact" class="pb-5 pt-sm-5" style="padding-top: 18%">
+      <div class="container pt-sm-4">
+        <div class="text-center">
+          <h5 class="text-primary fw-bold">CONTACT</h5>
+          <h2 class="fw-bold">Hubungi Kami</h2>
+          <p
+            class="text-wrap m-auto fw-light mb-4"
+            style="width: 20rem; line-height: 1.5rem"
+          >
+            Jika kalian memiliki pesan yang ingin disampaikan, maka kalian bisa
+            menghubungi lewat kontak yang ada di bawah ini.
+          </p>
+        </div>
+
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col-10 col-sm-6">
+            <div
+              class="contact-form d-flex justify-content-center align-items-center"
+            >
+              <form class="w-100">
+                <div class="mb-3">
+                  <label for="nama" class="form-label text-primary fw-bold"
+                    >Nama</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control bg-body-secondary"
+                    id="nama"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label
+                    for="exampleInputEmail1"
+                    class="form-label text-primary fw-bold"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control bg-body-secondary"
+                    id="exampleInputEmail1"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="pesan" class="form-label text-primary fw-bold"
+                    >Pesan</label
+                  >
+                  <textarea
+                    type="text"
+                    class="form-control bg-body-secondary"
+                    style="height: 10rem"
+                    id="pesan"
+                  ></textarea>
+                </div>
+                <div class="px-sm-5">
+                  <button type="submit" class="btn btn-primary w-100">
+                    Kirim
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="footer-icons-sosmed"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact End -->
+
+    <!-- Footer -->
+    <section
+      id="footer"
+      class="pb-5 pt-sm-5"
+      style="background-color: #0f172a; padding-top: 18%; color: #f5f0f0"
+    >
+      <div class="container">
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col-sm-6 col-12">
+            <h2 class="fw-bold">Dennis Eka Saputra</h2>
+            <h3 class="fs-4 fw-light">Hubungi Kami</h3>
+            <p class="fw-light">dennisekas04@gmail.com</p>
+            <p class="fw-light">
+              Jl. Sokayasa RT 02 RW 03 Kel. Berkoh Kec. Purwokerto Selatan Kab.
+              Banyumas
+            </p>
+          </div>
+          <div class="col-sm-6 col-12">
+            <h3 class="fs-4 fw-bold">Tautan</h3>
+            <ul class="d-inline-block ps-0" style="list-style: none">
+              <li class="mb-1 d-inline-block">
+                <a
+                  href="#home"
+                  class="link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover fw-light"
+                  style="color: #f5f0f0"
+                  >Home</a
+                >
+              </li>
+              <li class="mb-1">
+                <a
+                  href="#about"
+                  class="link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover fw-light"
+                  style="color: #f5f0f0"
+                  >About</a
+                >
+              </li>
+              <li class="mb-1">
+                <a
+                  href="#project"
+                  class="link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover fw-light"
+                  style="color: #f5f0f0"
+                  >Project</a
+                >
+              </li>
+              <li class="mb-1">
+                <a
+                  href="#contact"
+                  class="link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover fw-light"
+                  style="color: #f5f0f0"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="border-top opacity-50 mb-3"></div>
+        <div
+          class="footer-icons-sosmed w-100 text-center d-flex justify-content-center align-items-center"
+        >
+          <!-- Instagram -->
+          <a
+            href="https://www.instagram.com/dennisesptr_/"
+            class="me-3"
+            style="color: #f5f0f0"
+            target="_blank"
+            ><i data-feather="instagram"></i
+          ></a>
+          <!-- LinkedIn -->
+          <a
+            href="https://www.linkedin.com/in/dennisekas04/"
+            class="me-3"
+            style="color: #f5f0f0"
+            target="_blank"
+            ><i data-feather="linkedin"></i
+          ></a>
+          <!-- GitHub -->
+          <a
+            href="https://github.com/denniseka"
+            class="me-3"
+            target="_blank"
+            style="color: #f5f0f0"
+            ><i data-feather="github"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+    <!-- Footer End -->
+
+    <script>
+      feather.replace();
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
